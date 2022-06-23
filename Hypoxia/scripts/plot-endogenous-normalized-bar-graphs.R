@@ -94,7 +94,7 @@ pdf(file = paste0(plotFolder,actinPlotFile),
     width = 8, 
     height = 5)
 grid.arrange(barplot, 
-             top=paste0("Gene Expression of", gene," for Actin"),
+             top=paste0(gene,"/ACTN"),
              ncol = 1,
              nrow = 1)
 dev.off()
@@ -158,3 +158,14 @@ barplot <- barplot +
   ) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
 barplot
+
+### Plot GAPDH Normalization Figure
+library(gridExtra)
+pdf(file = paste0(plotFolder,gapdhPlotFile),   
+    width = 8, 
+    height = 5)
+grid.arrange(barplot, 
+             top=paste0(gene,"/GAPDH"),
+             ncol = 1,
+             nrow = 1)
+dev.off()
