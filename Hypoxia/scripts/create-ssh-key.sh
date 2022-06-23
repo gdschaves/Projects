@@ -48,8 +48,9 @@ Click the Add SSH Key button
 ###########################################################
 ###########################################################
 
-The command below only seems to work from the Terminal, not here in RStudio.
+The command below works from the Terminal directly and from in the Script open in RStudio.
 
 cd ~/Desktop/Gepoliano/Git/gdschaves/Projects
 git add ./
-git commit -m "Include R Markdown Hypoxia Notebook"
+git commit -m "Include Shell Script Modifications"
+git push
