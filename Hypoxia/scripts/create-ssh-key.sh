@@ -48,6 +48,8 @@ Click the Add SSH Key button
 ###########################################################
 ###########################################################
 
+The command below only seems to work from the Terminal, not here in RStudio.
+
 cd ~/Desktop/Gepoliano/Git/gdschaves/Projects
 git add ./
 git commit -m "Include R Markdown Hypoxia Notebook"
