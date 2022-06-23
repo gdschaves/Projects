@@ -94,5 +94,5 @@ git push
 
 cd ~/Desktop/Gepoliano/Git/gdschaves/Projects
 git add ./
-git commit -m "Include Modifications in R Script"
+git commit -m "Include Modifications in R Script Plots"
 git push
