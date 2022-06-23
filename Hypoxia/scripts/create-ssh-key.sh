@@ -1,3 +1,12 @@
+#!/bin/bash
+# set -euo pipefail
+
+# 1) Descriptor
+
+This shell script is intended to remind me of the steps I used to create a 
+ssh key to be able to pull material into the github acount associated with my 
+uchicago email.
+
 # Go to the ssh directory
 cd ~/.ssh
 pwd
@@ -46,8 +55,8 @@ Click the Add SSH Key button
 
 ###########################################################
 ###########################################################
-############## Save the current script to the script folder
-############## in the our repository, for documentation
+######### 1) Commit changes in current script to script folder
+######### in the our repository
 ###########################################################
 ###########################################################
 
@@ -56,4 +65,27 @@ The command below works from the Terminal directly and from in the Script open i
 cd ~/Desktop/Gepoliano/Git/gdschaves/Projects
 git add ./
 git commit -m "Include Shell Script Modifications"
+git push
+
+###########################################################
+###########################################################
+######### 2) Commit changes in R Markdown Notebook
+###########################################################
+###########################################################
+
+cd ~/Desktop/Gepoliano/Git/gdschaves/Projects
+git add ./
+git commit -m "Include Modifications in the main Notebook file"
+git push
+
+###########################################################
+###########################################################
+######### 3) Commit changes in R Script part of the 
+######### R Markdown Notebook
+###########################################################
+###########################################################
+
+cd ~/Desktop/Gepoliano/Git/gdschaves/Projects
+git add ./
+git commit -m "Include Modifications in R Script"
 git push
