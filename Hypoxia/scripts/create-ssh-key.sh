@@ -7,6 +7,11 @@ This shell script is intended to remind me of the steps I used to create a
 ssh key to be able to pull material into the github acount associated with my 
 uchicago email.
 
+# 2) Generating the ssh key
+
+Material for this script was figured out using the following video:
+  https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Fix-GitHubs-Permission-denied-publickey-SSH-error
+
 # Go to the ssh directory
 cd ~/.ssh
 pwd
@@ -52,6 +57,8 @@ Go to SSH and GPG Keys
 Go to Add New SSH Key
 Add the content copied
 Click the Add SSH Key button 
+
+# 3) Commit changes to the script
 
 ###########################################################
 ###########################################################
