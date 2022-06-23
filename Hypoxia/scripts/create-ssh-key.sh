@@ -47,3 +47,7 @@ Click the Add SSH Key button
 ################################################### 
 ###########################################################
 ###########################################################
+
+cd ~/Desktop/Gepoliano/Git/gdschaves/Projects
+git add ./
+git commit -m "Include R Markdown Hypoxia Notebook"
