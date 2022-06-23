@@ -2,11 +2,12 @@ library(rstatix)
 library(readxl)
 library(ggpubr)
 
-# Define the gene of interest
+# Define objects and location of DF containing RT-PCR gene expression thresholds (Ct values)
 gene="SPARC"
-
-# Define location of dataframe containing RT-PCR gene expression thresholds (Ct values)
+plotFolder="../plots/"
 directory <- "../data/"
+actinPlotFile <-paste0(gene,"_Actin_Normal.pdf")
+gapdhPlotFile <-paste0(gene,"_Gapdh_Normal.pdf")
 excel_file <- "GeneExpressionDF.xlsx"
 gene_expression_df <- read_excel(paste0(directory, excel_file))
 
@@ -86,6 +87,17 @@ barplot <- barplot +
   ) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
 barplot
+
+### Plot Actin Normalization Figure
+library(gridExtra)
+pdf(file = paste0(plotFolder,actinPlotFile),   
+    width = 8, 
+    height = 5)
+grid.arrange(barplot, 
+             top=paste0("Gene Expression of", gene," for Actin"),
+             ncol = 1,
+             nrow = 1)
+dev.off()
 
 ###########################################################
 ###########################################################
